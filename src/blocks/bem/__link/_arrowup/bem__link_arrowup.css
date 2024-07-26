@@ -1,0 +1,17 @@
+.bem__link_arrowup {
+  transition: all .3s linear;
+  display: flex;
+  align-items: center;
+}
+
+.bem__link_arrowup::after {
+  content: '';
+  margin-left: 4px;
+  width: 1em;
+  height: 1em;
+  background-image: url(../../../../images/svg/page-main-arrow-product.svg);
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+  background-position: center;
+  background-size: contain;
+}

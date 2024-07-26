@@ -1,0 +1,80 @@
+
+<footer class="py-16 px-10 bg-primary-darker mobile:px-2">
+    <div class="flex mobile:flex-col mobile:*:basis-auto">
+      <div class="basis-1/2 w-full pr-10 mb-10">
+        <a class="" href="/"><img src="../images/svg/logo-place-footer.svg" alt="Станкостальконструкция"></a>
+        <p class="text-sm text-primary-lighter mt-5">Завод по производству опор освещения</p>
+      </div>
+      <div class="basis-[760px] w-full grid grid-cols-3 gap-y-20 content-stretch olpc:grid-cols-2">
+        <nav>
+          <h2 class="text-xl mb-10 text-themewhite font-bold">Навигация</h2>
+          <ul>
+            <li class="mb-5"><a class="footer-link" href="<%= ROUTES.catalog %>">Продукция</a></li>
+            <li class="mb-5"><a class="footer-link" href="<%= ROUTES.about %>">О компании</a></li>
+            <li class="mb-5"><a class="footer-link" href="<%= ROUTES.techDocs %>">Проектировщикам</a></li>
+            <li class="mb-5"><a class="footer-link" href="<%= ROUTES.ourValues %>">Наши ценности</a></li>
+            <li><a class="footer-link" href="<%= ROUTES.contacts %>">Контакты</a></li>
+          </ul>
+        </nav>
+          <ul class="flex flex-col justify-between">
+            <li class="mb-10">
+              <h3 class="text-xl mb-10 text-themewhite font-bold">Отдел продаж</h3>
+              <ul>
+                <li class="mb-5"><a class="footer-link" href="tel:+79965423106">+7 (996)-542-31-06</a></li>
+                <li><a class="footer-link" href="tel:+79965423106">+7 (996)-542-31-06</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="text-xl mb-10 text-themewhite font-bold">Приемная</h3>
+              <a class="footer-link" href="tel:+73852361050">+7 (3852) 36 10 50</a></li>
+            </li>
+          </ul>
+        <div>
+          <h3 class="text-xl mb-10 text-themewhite font-bold">Наш адрес</h3>
+          <p class="footer-link">656012, Россия, Алтайский край, г. Барнаул, ул. П.С. Кулагина, 28/11, офис 1</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-between w-full mt-44 footer__down relative ">
+      <a href="mailto:ssk@sskbsz.ru" class="bem__link bem__link_email relative z-[1] text-6xl text-primary-lighterdouble bg-primary-darker pr-10 laptop:text-4xl mobile:text-2xl">
+        ssk@sskbsz.ru
+      </a>
+      <ul class="flex relative z-[1] text-4xl items-center pl-10 bg-primary-darker laptop:text-2xl mobile:text-lg">
+        <li class="mr-20 mobile:mr-4"><a class="text-primary-lighterdouble">ВК</a></li>
+        <li><a class="text-primary-lighterdouble">ТГ</a></li>
+      </ul>
+    </div>
+</footer>
+
+<!--Всплывающее меню-->
+<div class="popup popup_closed popup_type_menu popup-menu">
+  <div class="popup__container popup__container_menu">
+    <button class="popup__button-close self-end"></button>
+    <nav class="popup__menu">
+      <a class="popup__navlink" href="/">Главная</a>
+      <div class="dropdown popup__navlink">
+        <input type="checkbox" class="dropdown__checkbox" id="menu-checkbox">
+        <label class="dropdown__label" for="menu-checkbox">Продукция</label>
+        <ul class="dropdown__list">
+          <li class="dropdown__list-item"><a class="popup__navlink popup__navlink_sub" href="<%= ROUTES.catalog %>">Каталог продукции</a></li>
+          <li class="dropdown__list-item"><a class="popup__navlink popup__navlink_sub" href="<%= ROUTES.oporyMain %>">Опоры освещения</a></li>
+          <li class="dropdown__list-item"><a class="popup__navlink popup__navlink_sub" href="<%= ROUTES.machty %>">Мачты освещения</a></li>
+          <li class="dropdown__list-item"><a class="popup__navlink popup__navlink_sub" href="<%= ROUTES.sfg %>">Опоры силовые фланцевые граненые</a></li>
+          <li class="dropdown__list-item"><a class="popup__navlink popup__navlink_sub" href="<%= ROUTES.spg %>">Опоры силовые прямостоечные граненые</a></li>
+          <li class="dropdown__list-item"><a class="popup__navlink popup__navlink_sub" href="<%= ROUTES.nfg %>">Опоры несиловые фланцевые граненые</a></li>
+          <li class="dropdown__list-item"><a class="popup__navlink popup__navlink_sub" href="<%= ROUTES.npg %>">Опоры несиловые прямостоечные граненые</a></li>
+        </ul>
+      </div>
+      <a class="popup__navlink" href="<%= ROUTES.about %>">О компании</a>
+      <div class="dropdown popup__navlink">
+        <input type="checkbox" class="dropdown__checkbox" id="menu-checkbox-1">
+        <label class="dropdown__label" for="menu-checkbox-1">Документация</label>
+        <ul class="dropdown__list">
+          <li class="dropdown__list-item"><a class="popup__navlink popup__navlink_sub" href="<%= ROUTES.techDocs %>">Проектировщикам</a></li>
+        </ul>
+      </div>
+      <a class="popup__navlink" href="<%= ROUTES.contacts %>">Контакты</a>
+    </nav>
+   
+  </div>
+</div>

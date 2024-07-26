@@ -1,0 +1,34 @@
+.bem__link {
+  text-decoration: none;
+  
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.bem__link_left {
+  justify-content: flex-start;
+}
+
+.bem__link:hover {
+  @apply text-secondary;
+}
+
+
+.bem__link::before {
+  transition: all .3s ease-in;
+}
+.bem__link:hover::before {
+  transform: translateY(-3px);
+}
+
+.bem__link_default:hover {
+  @apply text-inherit;
+}
+
+.bem__link_default:hover::before {
+  transform: none;
+}

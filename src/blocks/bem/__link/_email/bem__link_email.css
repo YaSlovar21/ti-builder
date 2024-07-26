@@ -1,0 +1,20 @@
+
+  .bem__link_email {
+    transition: all .3s ease-in;
+    display: flex;
+    align-items: center;
+
+  }
+
+  .bem__link_email::before {
+    content: '';
+    width: 1em;
+    height: 1em;
+    background-image: url(../../../../images/svg/ssk-email.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 9px;
+    transition: all .3s ease-in;
+  }
+
