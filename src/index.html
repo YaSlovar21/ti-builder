@@ -12,65 +12,70 @@
   <%= require('html-loader!./inner-metrika.html').default %>
   <main>
     <section class="flex flex-col pt-14 bg-zinc-900">
-      <header class="flex justify-between self-center w-full max-w-[1520px] z-[1] relative after:absolute after:-z-[1] after:w-full after:h-[1px] after:bg-zinc-300 after:top-1/2 after:left-0">
-        <h1 class="py-3.5 text-4xl font-semibold uppercase bg-zinc-900 text-zinc-300 max-md:px-5 max-md:max-w-full">
+      <header class="flex mobile:flex-col mobile:*:basis-auto justify-between self-center w-full max-w-[1520px] z-[1] relative after:absolute after:-z-[1] after:w-full after:h-[1px] after:bg-zinc-300 after:top-1/2 after:left-0">
+        <h1 class="py-3.5 text-4xl font-semibold uppercase bg-zinc-900 text-zinc-300">
           Точка Излома
         </h1>
         <nav class="basis-1/2 ml-auto flex items-center my-auto text-xl font-medium text-zinc-50">
-          <a href="#about" class="px-5 py-2.5 rounded-full border border-solid bg-zinc-900 border-zinc-50">
+          <a href="#about" class="ui-button px-5 py-2.5 rounded-full border border-solid bg-zinc-900 border-zinc-50">
             О нас
           </a>
-          <a href="#contacts" class="flex ml-12 justify-center px-4 py-1.5 whitespace-nowrap rounded-2xl bg-zinc-900">
+          <a href="#contacts" class="ui-button flex ml-12 items-center justify-center rounded-full  px-5 py-2.5 whitespace-nowrap  bg-zinc-900">
             <span>Контакты</span>
-            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/55046596e8fa8ccb09fbc02c48bc69868b804e9aa9e6ca1e8060dc878560ad17?apiKey=fd1985b38ee5425aa66bcab53e046da7&&apiKey=fd1985b38ee5425aa66bcab53e046da7" class="shrink-0 w-6 ml-2 aspect-square" alt="" />
+            <!--<img loading="lazy" src="" class="shrink-0 w-6 ml-2 aspect-square" alt="" />-->
+            <svg class="size-6 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>            
           </a>
         </nav>
       </header>
       
-      <main class="mt-24 w-full max-md:pl-5 max-md:mt-10 max-md:max-w-full">
+      <main class="mt-24 w-full">
         <div class="relative  py-56 flex gap-5">
-          <div class="w-full max-w-[1520px] mx-auto ">
-            <h2 class="self-stretch  w-[59%] my-auto text-6xl text-white uppercase max-md:mt-10 max-md:max-w-full max-md:text-4xl">
+          <div class="w-full max-w-[1520px] mx-auto">
+            <h2 class="self-stretch  w-[59%] my-auto text-6xl text-white uppercase mobile:text-4xl">
               Инжиниринговый центр ООО «Термоблок»
             </h2>
           </div>
-          <div class="absolute right-0 bottom-0 flex flex-col ml-5 w-[41%] ">
-            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/92d5912eb6280bb6e4f9f36210f14b83fc4a839e65c702a6e9bbcef21369e4f3?apiKey=fd1985b38ee5425aa66bcab53e046da7&&apiKey=fd1985b38ee5425aa66bcab53e046da7" class="grow w-full aspect-[1.39] max-md:mt-10 max-md:max-w-full" alt="Инжиниринговый центр ООО «Термоблок»" />
+          <div class="absolute right-0 bottom-0 flex flex-col ml-5 w-[41%]">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/92d5912eb6280bb6e4f9f36210f14b83fc4a839e65c702a6e9bbcef21369e4f3?apiKey=fd1985b38ee5425aa66bcab53e046da7&&apiKey=fd1985b38ee5425aa66bcab53e046da7" class="grow w-full aspect-[1.39] " alt="Инжиниринговый центр ООО «Термоблок»" />
           </div>
         </div>
       </main>
       
-      <section class="flex flex-col self-center px-5 mt-40 w-full max-w-[1520px] max-md:mt-10 max-md:max-w-full">
-        <div class="flex gap-5 px-px">
+      <section class="flex flex-col self-center px-5 mt-40 w-full max-w-[1520px]">
+        <div class="flex gap-5 px-px mobile:flex-col mobile:*:basis-auto">
           <div class="basis-1/2 flex flex-col justify-between">
-            <h3 class="flex relative max-w-[481px] self-start indent-10 text-5xl font-semibold text-neutral-200 before:absolute before:w-4 before:h-4 before:left-0 before:top-4 before:bg-blue-400 before:rotate-45">
+            <h3 class="flex relative max-w-[481px] self-start indent-10 text-5xl mobile:text-3xl font-semibold text-neutral-200 before:absolute before:w-4 before:h-4 before:left-0 before:top-4 before:bg-blue-400 before:rotate-45">
               Чем занимается компания?
             </h3>
-            <a href="#details" class="text-xl flex w-3/4 justify-center items-center px-10 py-3 rounded-3xl border border-solid border-zinc-300 leading-[120%] text-neutral-300">
+            <a href="#details" class="ui-button text-xl font-medium flex w-3/4 justify-center items-center px-10 py-3 rounded-3xl border border-solid border-zinc-300 leading-[120%] text-neutral-300 mobile:hidden">
               <span class="flex gap-2.5">
                 <span>Узнать подробнее</span>
-                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/48d30bb16deb3f6c1c3d4be9ecf063ff9fb5b94b21f26eb9bb71220d99e4c2df?apiKey=fd1985b38ee5425aa66bcab53e046da7&&apiKey=fd1985b38ee5425aa66bcab53e046da7" class="shrink-0 w-6 aspect-square" alt="" />
+                <svg class="size-6 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>    
               </span>
             </a>
           </div>
-          <div class="flex basis-1/2 flex-col text-xl leading-6 text-white max-md:max-w-full">
-            <p class="max-md:max-w-full">
+          <div class="flex basis-1/2 flex-col text-xl mobile:text-base leading-6 text-white">
+            <p class="">
               Наиболее важным и технически сложным элементом в теплообменнике является пакет пластин. Отсутствие качественных российских пластин вынуждало российских производителей для выпуска достойной продукции использовать импортные пластины для теплообменников.
             </p>
-            <p class="mt-4 max-md:max-w-full">
+            <p class="mt-4">
               По этой причине проект «Точка излома» изначально был ориентирован на создание качественно нового продукта, совмещающего в себе передовой опыт мировых производителей и инновационные разработки российских ученых и конструкторов, опирающихся на особенности условий эксплуатации РПТО в России.
             </p>
-            <h3 class="mt-8 leading-[121%] max-md:max-w-full">
+            <h3 class="mt-8 leading-[121%]">
               Основные направления деятельности:
             </h3>
-            <ul class="flex mt-7 flex-col self-start leading-[121%] max-md:max-w-full">
+            <ul class="flex mt-7 flex-col self-start leading-[121%]">
               <li class="flex gap-0.5">
                 <span class="flex gap-0.5 font-medium tracking-wide text-blue-400 whitespace-nowrap">
                   <span>[</span>
                   <span class="text-center">1</span>
                   <span>]</span>
                 </span>
-                <span class="ml-3 text-white max-md:max-w-full">Разработка технологий для производства теплообменников</span>
+                <span class="ml-3 text-white">Разработка технологий для производства теплообменников</span>
               </li>
               <li class="flex gap-0.5 mt-4">
                 <span class="flex gap-0.5 font-medium tracking-wide text-blue-400 whitespace-nowrap">
@@ -78,7 +83,7 @@
                   <span class="text-center">2</span>
                   <span>]</span>
                 </span>
-                <span class="ml-3 text-white max-md:max-w-full">Программа расчёта теплообменного оборудования</span>
+                <span class="ml-3 text-white">Программа расчёта теплообменного оборудования</span>
               </li>
               <li class="flex gap-0.5 mt-4">
                 <span class="flex gap-0.5 font-medium tracking-wide text-blue-400 whitespace-nowrap">
@@ -86,7 +91,7 @@
                   <span class="text-center">3</span>
                   <span>]</span>
                 </span>
-                <span class="ml-3 text-white max-md:max-w-full">Научно исследовательские разработки</span>
+                <span class="ml-3 text-white">Научно исследовательские разработки</span>
               </li>
               <li class="flex gap-0.5 mt-4">
                 <span class="flex gap-0.5 font-medium tracking-wide text-blue-400 whitespace-nowrap">
@@ -94,138 +99,144 @@
                   <span class="text-center">4</span>
                   <span>]</span>
                 </span>
-                <span class="ml-3 text-white max-md:max-w-full">Еще что то</span>
+                <span class="ml-3 text-white">Еще что то</span>
               </li>
             </ul>
           </div>
         </div>
-        <div class="flex gap-5 justify-between items-start mt-6 text-xl max-md:flex-wrap max-md:pr-5 max-md:max-w-full">
+        <div class="flex gap-5 justify-between items-start mt-6 text-xl">
           
           
         </div>
-        <h4 class="mt-64 text-base font-light leading-5 text-blue-400 uppercase max-md:mt-10 max-md:max-w-full">
+        <h4 class="mt-64 mobile:mt-44 text-base font-light leading-5 text-blue-400 uppercase">
           [ Программа расчёта ]
         </h4>
-        <p class="mt-7 text-5xl leading-[58px] text-neutral-200 max-md:max-w-full max-md:text-4xl max-md:leading-[54px]">
+        <p class="mt-7 text-5xl mobile:text-3xl leading-[58px] text-neutral-200">
           Разработка программы расчёта теплообменников одно из основных направлений деятельности. Программа постоянно дорабатывается под потребности клиента, добавляются новые возможности и улучшается качество расчёта.
         </p>
-        <div class="flex gap-5 justify-between px-px mt-24 max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
-          <div class=" flex flex-col self-end mt-64 text-xl">
-            <p class="leading-7 text-gray-200 w-2/3">
+        <div class="flex gap-5 justify-between px-px mt-24 laptop:flex-col-reverse ">
+          <div class=" flex flex-col self-end text-xl">
+            <p class="leading-7 text-gray-200 w-2/3 laptop:w-full mobile:text-base">
               <a href="#download" class="text-blue-400">Скачать актуальную версию</a> можно на сайте Точка Излома. Если есть какие-либо вопросы по расчётам или хотите стать дилером с данным ПО, обращайтеся, всё расскажем
             </p>
-            <a href="#download-program" class="w-2/3 flex gap-5 justify-center px-14 py-3 mt-16 rounded-full border border-solid bg-zinc-900 border-neutral-200 text-zinc-100 max-md:flex-wrap max-md:px-5 max-md:mt-10 max-md:max-w-full">
-              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/eeba73ad3415c5af47671fbcc51e188f601c575243a5c85b97873939fc80c6e1?apiKey=fd1985b38ee5425aa66bcab53e046da7&&apiKey=fd1985b38ee5425aa66bcab53e046da7" class="shrink-0 w-6 aspect-square" alt="" />
+            <a href="#download-program" class="ui-button font-medium w-2/3 laptop:w-full flex gap-5 justify-center px-14 py-3 mt-16 rounded-full border border-solid bg-zinc-900 border-neutral-200 text-zinc-100">
+              <svg  class="size-6 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+              </svg>              
               <span>Скачать программу</span>
             </a>
           </div>
-          <figure class="flex flex-col max-md:max-w-full">
-            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/860091514e4b9c9f4fe7cf27ad12848f5fcefbd8fc73fbebd5e8df97335b2f85?apiKey=fd1985b38ee5425aa66bcab53e046da7&&apiKey=fd1985b38ee5425aa66bcab53e046da7" class="w-full aspect-[1.35] max-md:max-w-full" alt="Программа расчёта теплообменников" />
+          <figure class="flex flex-col">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/860091514e4b9c9f4fe7cf27ad12848f5fcefbd8fc73fbebd5e8df97335b2f85?apiKey=fd1985b38ee5425aa66bcab53e046da7&&apiKey=fd1985b38ee5425aa66bcab53e046da7" class="w-full aspect-[1.35] " alt="Программа расчёта теплообменников" />
             <figcaption class="flex gap-1.5 self-start mt-5">
               <div class="shrink-0 h-1 bg-blue-400 rounded-sm w-[225px]"></div>
               <div class="shrink-0 h-1 rounded-sm bg-neutral-500 w-[75px]"></div>
             </figcaption>
           </figure>
         </div>
-        <h4 class="mt-64 mb-7 text-base font-light leading-5 text-blue-400 uppercase max-md:mt-10 max-md:max-w-full">
+        <h4 class="mt-64 mobile:mt-44 mb-7 text-base font-light leading-5 text-blue-400 uppercase">
           [ Разработка новых пластин и уплотнений для теплообменников ]
         </h4>
-        <article class="flex py-11 pr-px pl-8 w-full max-md:flex-wrap max-md:pl-5 max-md:max-w-full">
-          <time datetime="2022" class="rsquare self-start basis-1/4 text-base font-light leading-5 text-blue-400 uppercase">
+        <article class="flex py-11 pr-px pl-8 w-full mobile:flex-col mobile:*:basis-auto mobile:px-0">
+          <time datetime="2022" class="rsquare self-start basis-1/4 text-base font-light leading-5 text-blue-400 uppercase mb-10">
             Сейчас
           </time>
           <div class="flex flex-col basis-1/2 w-1/2 w-full justify-self-center">
-            <div class="flex flex-col  text-white max-md:mt-10 max-md:max-w-full">
-              <h6 class="text-4xl leading-10 max-md:max-w-full">
+            <div class="flex flex-col  text-white">
+              <h6 class="text-4xl leading-10  mobile:text-2xl">
                 Разработка новой пластины ДУ250
               </h6>
-              <p class="mt-5 text-xl leading-6 max-md:max-w-full">
+              <p class="mt-5 text-xl leading-6 mobile:text-base">
                 Разработан тех процесс и изготовлено оборудование для теплообменника ТИ95
               </p>
             </div>
           </div>
          
         </article>
-        <article class="flex py-11 pr-px pl-8 w-full border-t border-slate-600 max-md:flex-wrap max-md:pl-5 max-md:max-w-full">
-          <time datetime="2022" class="rsquare self-start basis-1/4 text-base font-light leading-5 text-blue-400 uppercase">
+        <article class="flex py-11 pr-px pl-8 w-full mobile:flex-col mobile:*:basis-auto  mobile:px-0 border-t border-slate-600">
+          <time datetime="2022" class="rsquare self-start basis-1/4 text-base font-light leading-5 text-blue-400 uppercase  mb-10">
             2023 год
           </time>
           <div class="flex flex-col basis-1/2 justify-self-center">
-            <div class="flex flex-col  text-white max-md:mt-10 max-md:max-w-full">
-              <h6 class="text-4xl leading-10 max-md:max-w-full">
+            <div class="flex flex-col  text-white">
+              <h6 class="text-4xl leading-10  mobile:text-2xl">
                 Разработка новой пластины ДУ250
               </h6>
-              <p class="mt-5 text-xl leading-6 max-md:max-w-full">
+              <p class="mt-5 text-xl leading-6 mobile:text-base">
                 Разработан тех процесс и изготовлено оборудование для теплообменника ТИ95
               </p>
             </div>
           </div>
-          <div class="flex flex-col ml-auto">
-            <a href="https://termoblok.ru" class="flex gap-2.5 justify-center px-10 py-2.5 text-base leading-5 rounded-3xl border border-solid border-zinc-300 text-neutral-300 max-md:px-5 max-md:mt-10">
+          <div class="flex flex-col ml-auto mobile:ml-0 mobile:mt-4 mobile:self-start">
+            <a href="https://termoblok.ru" class="ui-button flex gap-2.5 items-center justify-center px-10 py-2.5 text-base leading-5 rounded-3xl border border-solid border-zinc-300 text-neutral-300">
               <span>Читать на termoblok.ru</span>
-              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/8b184f65730c8d6021dcec0993778b2dd46d6819154827817951c6d3f03cf669?apiKey=fd1985b38ee5425aa66bcab53e046da7&&apiKey=fd1985b38ee5425aa66bcab53e046da7" class="shrink-0 self-start aspect-square w-[17px]" alt="" />
+              <svg class="size-4 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+              </svg> 
             </a>
           </div>
         </article>
-        <article class="flex py-11 pr-px pl-8 w-full border-t border-slate-600 max-md:flex-wrap max-md:pl-5 max-md:max-w-full">
-          <time datetime="2022" class="rsquare self-start basis-1/4 text-base font-light leading-5 text-blue-400 uppercase">
+        <article class="flex py-11 pr-px pl-8 w-full mobile:flex-col mobile:*:basis-auto  mobile:px-0 border-t border-slate-600">
+          <time datetime="2022" class="rsquare self-start basis-1/4 text-base font-light leading-5 text-blue-400 uppercase  mb-10">
             2022 год
           </time>
           <div class="flex flex-col basis-1/2 justify-self-center">
-            <div class="flex flex-col  text-white max-md:mt-10 max-md:max-w-full">
-              <h6 class="text-4xl leading-10 max-md:max-w-full">
+            <div class="flex flex-col  text-white">
+              <h6 class="text-4xl leading-10  mobile:text-2xl">
                 Разработка новой пластины ДУ250
               </h6>
-              <p class="mt-5 text-xl leading-6 max-md:max-w-full">
+              <p class="mt-5 text-xl leading-6 mobile:text-base">
                 Разработан тех процесс и изготовлено оборудование для теплообменника ТИ95
               </p>
             </div>
           </div>
-          <div class="flex flex-col ml-auto">
-            <a href="https://termoblok.ru" class="flex gap-2.5 justify-center px-10 py-2.5 text-base leading-5 rounded-3xl border border-solid border-zinc-300 text-neutral-300 max-md:px-5 max-md:mt-10">
+          <div class="flex flex-col ml-auto  mobile:ml-0 mobile:mt-4 mobile:self-start">
+            <a href="https://termoblok.ru" class="ui-button flex gap-2.5 items-center justify-center px-10 py-2.5 text-base leading-5 rounded-3xl border border-solid border-zinc-300 text-neutral-300">
               <span>Читать на termoblok.ru</span>
-              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/8b184f65730c8d6021dcec0993778b2dd46d6819154827817951c6d3f03cf669?apiKey=fd1985b38ee5425aa66bcab53e046da7&&apiKey=fd1985b38ee5425aa66bcab53e046da7" class="shrink-0 self-start aspect-square w-[17px]" alt="" />
+              <svg class="size-4 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+              </svg> 
             </a>
           </div>
         </article>
-        <button class="ml-[calc(25%+2rem)] px-14 py-3 mt-7 max-w-full text-xl uppercase rounded-3xl border border-solid bg-zinc-900 border-neutral-200 text-zinc-100 w-[453px] max-md:px-5">
+        <button class="ml-[calc(25%+2rem)] px-14 py-3 mt-7 max-w-full text-xl uppercase rounded-3xl border border-solid bg-zinc-900 border-neutral-200 text-zinc-100 w-[453px]  mobile:w-full  mobile:ml-0">
           Смотреть еще
         </button>
     
-    <h4 class="mt-72 text-base font-light leading-5 text-blue-400 uppercase max-md:mt-10 max-md:max-w-full">
+    <h4 class="mt-72 mobile:mt-44 text-base font-light leading-5 text-blue-400 uppercase">
       [ производится в ООО «Термоблок» ]
     </h4>
     
-    <div class="flex gap-4 mt-16 max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
-      <div class="flex-auto px-px max-md:max-w-full">
-        <div class="flex gap-5 max-md:flex-col">
-          <article class="flex flex-col w-[33%]">
-            <div class="flex flex-col grow justify-center text-4xl font-medium leading-9 whitespace-nowrap border border-solid border-zinc-800 text-zinc-300 max-md:mt-2 max-md:max-w-full">
-              <div class="flex flex-col items-start pt-8 pr-20 pb-16 pl-8 rounded-xl border border-solid border-sky-950 border-opacity-30 max-md:px-5 max-md:max-w-full">
+    <div class="flex gap-4 mt-16  mobile:flex-col">
+      <div class="flex-auto px-px">
+        <div class="flex gap-5 mobile:flex-col mobile:*:ml-0">
+          <article class="flex flex-col w-[33%] mobile:w-full">
+            <div class="flex flex-col grow justify-center text-4xl font-medium leading-9 whitespace-nowrap border border-solid border-zinc-800 text-zinc-300">
+              <div class="flex flex-col items-start pt-8 pr-20 pb-16 pl-8 rounded-xl border border-solid border-sky-950 border-opacity-30">
                 <h5 class="flex rsquare rsquare_blue">
                   
                   Пластины
                 </h5>
-                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/217db3326aa3725ed1384d2b2251011a94df1f7b2dd3510238a66c5c8a30aaf6?apiKey=fd1985b38ee5425aa66bcab53e046da7&&apiKey=fd1985b38ee5425aa66bcab53e046da7" class="mt-16 max-w-full aspect-[0.76] w-[308px] max-md:mt-10" alt="Пластины для теплообменников" />
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/217db3326aa3725ed1384d2b2251011a94df1f7b2dd3510238a66c5c8a30aaf6?apiKey=fd1985b38ee5425aa66bcab53e046da7&&apiKey=fd1985b38ee5425aa66bcab53e046da7" class="mt-16 max-w-full aspect-[0.76] w-[308px]" alt="Пластины для теплообменников" />
               </div>
             </div>
           </article>
-          <article class="flex flex-col ml-5 w-[33%]">
-            <div class="flex flex-col grow justify-center text-4xl font-medium leading-9 whitespace-nowrap border border-solid border-zinc-800 text-zinc-300 max-md:mt-2 max-md:max-w-full">
-              <div class="flex flex-col pt-8 pb-14 rounded-xl border border-solid border-sky-950 border-opacity-30 max-md:max-w-full">
-                <h5 class="rsquare rsquare_blue flex self-start ml-9 max-md:ml-2.5">
+          <article class="flex flex-col ml-5 w-[33%] mobile:w-full">
+            <div class="flex flex-col grow justify-center text-4xl font-medium leading-9 whitespace-nowrap border border-solid border-zinc-800 text-zinc-300">
+              <div class="flex flex-col pt-8 pb-14 rounded-xl border border-solid border-sky-950 border-opacity-30">
+                <h5 class="rsquare rsquare_blue flex self-start ml-9">
                   
                   Уплотнения
                 </h5>
-                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c8d6b0c8f838e350d8924e1938ee176e7bd8d39480856fddc83f2978c3d45401?apiKey=fd1985b38ee5425aa66bcab53e046da7&&apiKey=fd1985b38ee5425aa66bcab53e046da7" class="mt-14 w-full aspect-[1.04] max-md:mt-10 max-md:max-w-full" alt="Уплотнения для теплообменников" />
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c8d6b0c8f838e350d8924e1938ee176e7bd8d39480856fddc83f2978c3d45401?apiKey=fd1985b38ee5425aa66bcab53e046da7&&apiKey=fd1985b38ee5425aa66bcab53e046da7" class="mt-14 w-full aspect-[1.04] " alt="Уплотнения для теплообменников" />
               </div>
             </div>
           </article>
-          <article class="flex flex-col ml-5 w-[33%]">
-            <div class="flex flex-col grow justify-center text-4xl font-medium leading-9 border border-solid border-zinc-800 text-zinc-300 max-md:mt-2 max-md:max-w-full">
-              <div class="flex flex-col pt-8 pb-14 rounded-xl border border-solid border-sky-950 border-opacity-30 max-md:max-w-full">
-                <h5 class="rsquare rsquare_blue ml-9 ">Элементы рам</h5>
-                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/3e63188514dab0d53030effe2dd5792e1b77f34fe9acb3fddf2a03e14dd8e037?apiKey=fd1985b38ee5425aa66bcab53e046da7&&apiKey=fd1985b38ee5425aa66bcab53e046da7" class="mt-16 w-full aspect-[1.06] max-md:mt-10 max-md:max-w-full" alt="Элементы рам для теплообменников" />
+          <article class="flex flex-col ml-5 w-[33%] mobile:w-full">
+            <div class="flex flex-col grow justify-center text-4xl font-medium leading-9 border border-solid border-zinc-800 text-zinc-300">
+              <div class="flex flex-col pt-8 pb-14 rounded-xl border border-solid border-sky-950 border-opacity-30">
+                <h5 class="rsquare rsquare_blue ml-9">Элементы рам</h5>
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/3e63188514dab0d53030effe2dd5792e1b77f34fe9acb3fddf2a03e14dd8e037?apiKey=fd1985b38ee5425aa66bcab53e046da7&&apiKey=fd1985b38ee5425aa66bcab53e046da7" class="mt-16 w-full aspect-[1.06] " alt="Элементы рам для теплообменников" />
               </div>
             </div>
           </article>
@@ -238,13 +249,13 @@
     </div>
     </section>
     
-    <section class="flex justify-center items-center px-16 py-20 mt-32 w-full bg-stone-950 max-md:px-5 max-md:mt-10 max-md:max-w-full">
-      <div class="flex flex-col mt-32 mb-2.5 w-full max-w-[1518px] max-md:mt-10 max-md:max-w-full">
-        <h2 class="text-5xl w-3/4 mobile:w-full leading-[58px] text-neutral-200">
+    <section class="flex justify-center items-center px-16 py-20 mt-32 w-full bg-stone-950 mobile:px-3">
+      <div class="flex flex-col mt-32 mb-2.5 w-full max-w-[1518px]">
+        <h2 class="text-5xl  mobile:text-3xl w-3/4 mobile:w-full leading-[58px] text-neutral-200">
           Мы любим свою работу и рады решить Вашу задачу, требующую квалифицированного инженерного подхода.
         </h2>
-        <div class="flex gap-5 justify-between mt-40 w-full text-xl max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
-          <address class="flex gap-5 justify-between items-start self-start leading-[120%] text-neutral-300 max-md:flex-wrap max-md:max-w-full not-italic">
+        <div class="flex gap-5 justify-between mt-40 w-full text-xl mobile:items-end">
+          <address class="flex gap-5 justify-between items-start self-start leading-[120%] text-neutral-300   not-italic mobile:flex-col">
             <div class="flex flex-col mt-1.5">
               <div class="flex gap-2.5 whitespace-nowrap">
                 <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/857052cd74ea3dd82f541136daff9458a139a09e2bca21d457d21102b56c72f9?apiKey=fd1985b38ee5425aa66bcab53e046da7&&apiKey=fd1985b38ee5425aa66bcab53e046da7" class="shrink-0 w-6 aspect-square" alt="" />
@@ -267,7 +278,7 @@
               <a href="tel:+73852772638" class="mt-4">8 (3852)77-26-38</a>
             </div>
           </address>
-          <a href="#contact" class="px-14 py-5 border border-solid bg-zinc-900 border-neutral-500 rounded-[33px] text-zinc-100 max-md:px-5 max-md:max-w-full">
+          <a href="#contact" class="px-14 py-5 border border-solid bg-zinc-900 border-neutral-500 rounded-[33px] text-zinc-100 mobile:p-4 ">
             Напишите нам!
           </a>
         </div>

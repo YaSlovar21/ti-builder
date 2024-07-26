@@ -105,8 +105,9 @@
     @apply text-[2.5rem] mobile:text-2xl;
   }
   .ui-button {
-    @apply text-primary-darker p-5 uppercase text-lg border border-primary-darker transition-all duration-300;
+    @apply transition-all duration-300 hover:bg-zinc-50 hover:text-zinc-900;
   }
+  
   .ui-button-white {
     @apply transition-all duration-300 hover:bg-primary-white hover:bg-opacity-20;
   }
