@@ -278,7 +278,7 @@
               <a href="tel:+73852772638" class="mt-4">8 (3852)77-26-38</a>
             </div>
           </address>
-          <a href="#contact" class="px-14 py-5 border border-solid bg-zinc-900 border-neutral-500 rounded-[33px] text-zinc-100 mobile:p-4 ">
+          <a href="#contact" class="feedback-button bottom-24 right-20 fixed px-14 py-3 border border-solid bg-zinc-900 border-neutral-500 rounded-[33px] text-zinc-100 hover:bg-zinc-100 hover:text-neutral-700 transition-all duration-150 mobile:p-4 ">
             Напишите нам!
           </a>
         </div>
@@ -286,5 +286,11 @@
     </section>
     </section>
   </main>
+  <div class="feedback-form hidden fixed bottom-16 right-10 mobile:w-[calc(100%-1rem)] mobile:bottom-2 mobile:right-2">
+    
+      <%= _.template(require('html-loader!./insets/form-section.html').default)() %>
+  
+  </div>
+  <%= require('html-loader!./insets/popups/popupMessage.html').default %>
 </body>
 </html>

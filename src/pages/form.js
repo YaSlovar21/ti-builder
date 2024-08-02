@@ -4,6 +4,14 @@ import FormValidatorNew from '../js/components/FormValidatorNew';
 
 import Api from '../js/components/Api.js';
 import FormStatic from '../js/components/FormStatic.js';
+import { formClose } from '.';
+
+import PopupWithImage from '../js/components/PopupWithImage.js';
+
+import {
+  popupMessageSelector,     //попап с картинкой (селектор)
+  popupImageSelectorsCongig
+} from '../js/utils/constants.js'
 
 const upFooterFormConfig = {
     inputSelector: '.form__input',
@@ -22,7 +30,7 @@ const upFooterFormConfig = {
   }
 
 const formApi = new Api({
-    baseUrl: 'https://functions.yandexcloud.net/d4e871hdav9f1llf6ebq',
+    baseUrl: 'https://functions.yandexcloud.net/d4et5mddo52k0fjps5hf',
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json;charset=utf-8',
@@ -49,6 +57,7 @@ const upFooterFormStatic = new FormStatic({
           upFooterFormValidator.disableSaveButton();
           upFooterForm.reset();
           renderLoading(false, upFooterFormSubmitButton, 'Оставить заявку', 'Отправляем...');
+          formClose();
         });
     },
     formCleanError: () => {},

@@ -9,6 +9,7 @@ export const cardsContainerSelector = '.projects__items';
 
 //селекторы модальных окон
 export const popupImageSelector = '.popup-image';
+export const popupMessageSelector = '.popup-message';
 //export const callBackPopupSelector = '.popup-callback';
 //export const popupWithToSelector = '.popup-to';
 //export const popupWithMenuSelector = '.popup-menu';

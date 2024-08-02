@@ -1,5 +1,9 @@
+.form {
+    @apply w-full bg-[#303030] px-10 pt-11 pb-8 rounded-2xl mobile:p-4 mobile:pt-8;
+}
+
 .form__field {
-    @apply  rounded-sm relative mobile:mr-0 mobile:mb-4;
+    @apply  rounded-sm relative min-w-[448px] laptop:min-w-max mobile:mr-0 mobile:mb-4;
 }
 
 .form__field:last-child {
@@ -15,11 +19,11 @@
 }
 
 .form__input {
-    @apply w-full px-5 py-5 text-xl bg-[#D7E6F2]  border border-primary-dark rounded-md text-gray-800 outline-none mobile:text-base mobile:p-3;
+    @apply w-full p-4 text-lg bg-zinc-900  border border-stone-950 rounded-md text-zinc-200 outline-none mobile:text-base mobile:p-3;
 }
 
 .form__input::placeholder {
-    @apply text-primary-lighter
+    @apply text-primary-lighterdouble
 }
 
 .form__input_type_textarea {
@@ -27,21 +31,22 @@
 }
 
 .form__submit-button {
-    @apply bg-primary text-lg hover:bg-primary-dark transition-all duration-300 p-5 uppercase font-bold text-themewhite mt-8;
+    @apply flex justify-center gap-5 rounded-full text-zinc-50 border border-zinc-900 bg-zinc-900  text-xl font-medium hover:bg-zinc-50 hover:text-zinc-900 transition-all duration-300 px-5 py-3  mt-8;
 }
 
 .form__submit-button_disabled {
-    @apply bg-gray-700 hover:bg-gray-700 cursor-not-allowed;
+    @apply bg-[#303030] hover:bg-[#252525] cursor-not-allowed border border-zinc-900 text-zinc-900;
 }
 
 .form__input-error {
+    @apply text-red-400;
     font-size: 10px;
     letter-spacing: .04em;
-    color: var(--theme-main-color);
+    
     opacity: 0;
     position: absolute;
     bottom: 2px;
-    left: 0;
+    left: 16px;
     transition: 0.3s;
     width: 100%;
   }

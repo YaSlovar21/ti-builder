@@ -162,8 +162,8 @@ function generateConfig(oporyData, newsData, objectsData) {
   return {
     entry: { 
       index: './src/pages/index.js', 
-      /*form: './src/pages/form.js',
-      blogpage: './src/pages/blog-page.js',
+      form: './src/pages/form.js',
+      /*blogpage: './src/pages/blog-page.js',
       lpopory: './src/pages/lpopory.js',
       slider: './src/pages/mainPageSlider.js',
       popupWithImage: './src/pages/popupImage.js',
@@ -248,7 +248,7 @@ function generateConfig(oporyData, newsData, objectsData) {
         },
         title: "Точка Излома - инжиниринговая компания",
         template: './src/index.html', // путь к файлу index.html
-        chunks: ['index', 'form','ctaReactions', 'slider', 'popupWithImage'],
+        chunks: ['index', 'form'],
       }),
       
       new CleanWebpackPlugin(),
